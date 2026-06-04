@@ -765,7 +765,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
       var links = document.querySelector('.nav__links');
       if (!links) return;
       if (links.style.display === 'flex') { links.style.display = ''; return; }
-      links.style.cssText = 'display:flex;position:absolute;flex-direction:column;gap:16px;top:100%;right:var(--pad);background:rgba(244,242,236,.98);padding:20px 24px;border-radius:10px;border:1px solid rgba(34,35,31,.12);box-shadow:0 20px 50px -30px rgba(0,0,0,.4)';
+      links.style.cssText = 'display:flex;position:absolute;flex-direction:column;gap:16px;top:100%;right:var(--pad);background:#0f1116;padding:20px 24px;border-radius:10px;border:1px solid rgba(255,255,255,.14);box-shadow:0 20px 50px -10px rgba(0,0,0,.6);z-index:50;min-width:200px';
     });
   }
 
