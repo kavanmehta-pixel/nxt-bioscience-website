@@ -3,7 +3,7 @@
 <title>Our Story | NXT Bioscience</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
 /* ============================================================
-   NXT Bioscience — site styles (warm editorial)
+   NXT Bioscience - site styles (warm editorial)
    ============================================================ */
 :root{
   --paper:#08090b; --paper-2:#121419; --paper-3:#181b21;
@@ -489,13 +489,13 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 <div class="divider"><hr /></div>
 <section class="page-lead">
   <p class="page-lead__label" data-reveal>Our Story</p>
-  <p class="page-lead__text" data-reveal data-delay="1">NXT Bioscience exists to scale plant tissue culture beyond the limits of manual labour — combining innovative plant science with robotics and automation to meet global demand for clonal propagation, new genetics, and resilient supply chains.</p>
+  <p class="page-lead__text" data-reveal data-delay="1">NXT Bioscience exists to scale plant tissue culture beyond the limits of manual labour - combining innovative plant science with robotics and automation to meet global demand for clonal propagation, new genetics, and resilient supply chains.</p>
 </section>
 
 <section class="feature">
   <div class="feature__body">
     <h2 class="h2" data-reveal>A foundation worth building on</h2>
-    <div class="feature__text"><p data-reveal>Plant tissue culture is the foundation of modern plant science. It has supported clean genetic deployment, varietal development, and clonal propagation at significant commercial scale for decades.</p><p data-reveal>But the underlying model has remained largely unchanged since the 1960s. Even at the scale it operates today, tissue culture depends on skilled people performing repetitive manual work across millions of plants — and that model has reached the limit of what it can do.</p><p data-reveal>The science is sound. The skill of the people running it is significant. The constraint is the system around them.</p></div>
+    <div class="feature__text"><p data-reveal>Plant tissue culture is the foundation of modern plant science. It has supported clean genetic deployment, varietal development, and clonal propagation at significant commercial scale for decades.</p><p data-reveal>But the underlying model has remained largely unchanged since the 1960s. Even at the scale it operates today, tissue culture depends on skilled people performing repetitive manual work across millions of plants - and that model has reached the limit of what it can do.</p><p data-reveal>The science is sound. The skill of the people running it is significant. The constraint is the system around them.</p></div>
   </div>
   <div class="feature__media"><figure class="frame parallax" style="aspect-ratio:4/5;max-width:420px;margin-left:auto"><image-slot id="story-1" shape="rect" placeholder="Image"></image-slot></figure></div>
 </section>
@@ -549,7 +549,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 <script src="image-slot.js"></script>
 <script>
 /* ============================================================
-   NXT Bioscience — interactions (calm)
+   NXT Bioscience - interactions (calm)
    ============================================================ */
 (function () {
   'use strict';
@@ -569,7 +569,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
         if (el.getBoundingClientRect().top < window.innerHeight * 0.96) el.classList.add('in');
       });
     }, 700);
-    // hard failsafe — force final state inline (survives throttled/paused transitions)
+    // hard failsafe - force final state inline (survives throttled/paused transitions)
     setTimeout(function () {
       reveals.forEach(function (el) {
         el.classList.add('in');

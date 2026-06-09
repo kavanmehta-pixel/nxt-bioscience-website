@@ -3,7 +3,7 @@
 <title>Home | NXT Bioscience</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
 /* ============================================================
-   NXT Bioscience — site styles (warm editorial)
+   NXT Bioscience - site styles (warm editorial)
    ============================================================ */
 :root{
   --paper:#08090b; --paper-2:#121419; --paper-3:#181b21;
@@ -486,7 +486,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 <section class="hero" id="top">
   <div class="hero__copy">
     <h1 class="hero__title" data-reveal>Plant tissue culture, <em>redesigned</em> for global scale</h1>
-    <p class="hero__sub" data-reveal data-delay="1">NXT Bioscience is scaling plant tissue culture — combining innovative plant science, robotics, and automation to meet global demand for high-health clonal propagation, accelerate deployment of new genetics, and reshape propagation supply chains at scale.</p>
+    <p class="hero__sub" data-reveal data-delay="1">NXT Bioscience is scaling plant tissue culture - combining innovative plant science, robotics, and automation to meet global demand for high-health clonal propagation, accelerate deployment of new genetics, and reshape propagation supply chains at scale.</p>
   </div>
   <div class="hero__media"><figure class="frame parallax" style="aspect-ratio:5/3.5"><image-slot id="home-hero" shape="rect" placeholder="Hero image"></image-slot></figure></div>
 </section>
@@ -495,7 +495,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
   <div class="feature__body">
     <h2 class="h2" data-reveal>Our Story</h2>
     <div class="feature__text">
-      <p data-reveal>Plant tissue culture is the foundation of modern plant science. But its underlying model has remained largely unchanged since the 1960s — and even at the scale it operates today, it depends on skilled people performing repetitive manual work across millions of plants.</p>
+      <p data-reveal>Plant tissue culture is the foundation of modern plant science. But its underlying model has remained largely unchanged since the 1960s - and even at the scale it operates today, it depends on skilled people performing repetitive manual work across millions of plants.</p>
       <p data-reveal data-delay="1">NXT Bioscience is redesigning that system. By combining innovative plant science with robotics and automation, we are scaling tissue culture to meet global demand for clonal propagation, new genetics, and resilient supply chains.</p>
     </div>
     <div class="feature__more" data-reveal data-delay="2"><a class="link" href="our-story.html"><span>Read more</span><span class="link__arrow">&rarr;</span></a></div>
@@ -507,7 +507,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
   <div class="feature__body">
     <h2 class="h2" data-reveal>Our Platform</h2>
     <div class="feature__text">
-      <p data-reveal>A process built on human labour and outdated science cannot be scaled. Scaling tissue culture is not a robotics problem — it is a system-design problem.</p>
+      <p data-reveal>A process built on human labour and outdated science cannot be scaled. Scaling tissue culture is not a robotics problem - it is a system-design problem.</p>
       <p data-reveal data-delay="1">NXT&rsquo;s platform combines innovative plant science, redesigned from first principles, with robotics and automation built around it. Together, they redesign tissue culture as a propagation system for global scale.</p>
     </div>
     <div class="feature__more" data-reveal data-delay="2"><a class="link" href="our-platform.html"><span>Read more</span><span class="link__arrow">&rarr;</span></a></div>
@@ -543,7 +543,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 <script src="image-slot.js"></script>
 <script>
 /* ============================================================
-   NXT Bioscience — interactions (calm)
+   NXT Bioscience - interactions (calm)
    ============================================================ */
 (function () {
   'use strict';
@@ -563,7 +563,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
         if (el.getBoundingClientRect().top < window.innerHeight * 0.96) el.classList.add('in');
       });
     }, 700);
-    // hard failsafe — force final state inline (survives throttled/paused transitions)
+    // hard failsafe - force final state inline (survives throttled/paused transitions)
     setTimeout(function () {
       reveals.forEach(function (el) {
         el.classList.add('in');

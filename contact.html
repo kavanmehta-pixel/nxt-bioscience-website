@@ -3,7 +3,7 @@
 <title>Contact | NXT Bioscience</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
 /* ============================================================
-   NXT Bioscience — site styles (warm editorial)
+   NXT Bioscience - site styles (warm editorial)
    ============================================================ */
 :root{
   --paper:#08090b; --paper-2:#121419; --paper-3:#181b21;
@@ -535,7 +535,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 <script src="image-slot.js"></script>
 <script>
 /* ============================================================
-   NXT Bioscience — interactions (calm)
+   NXT Bioscience - interactions (calm)
    ============================================================ */
 (function () {
   'use strict';
@@ -555,7 +555,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
         if (el.getBoundingClientRect().top < window.innerHeight * 0.96) el.classList.add('in');
       });
     }, 700);
-    // hard failsafe — force final state inline (survives throttled/paused transitions)
+    // hard failsafe - force final state inline (survives throttled/paused transitions)
     setTimeout(function () {
       reveals.forEach(function (el) {
         el.classList.add('in');

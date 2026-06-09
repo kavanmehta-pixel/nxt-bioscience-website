@@ -3,7 +3,7 @@
 <title>Our Team | NXT Bioscience</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
 /* ============================================================
-   NXT Bioscience — site styles (warm editorial)
+   NXT Bioscience - site styles (warm editorial)
    ============================================================ */
 :root{
   --paper:#08090b; --paper-2:#121419; --paper-3:#181b21;
@@ -486,7 +486,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 <section class="page-hero page-hero--split"><div class="page-hero__top">
   <div class="page-hero__text">
   <h1 data-reveal data-delay="1">The team behind the <em>platform</em></h1>
-  <p class="page-hero__lede" data-reveal data-delay="2">NXT Bioscience has brought together one of the most capable plant science, engineering, and operations teams in the industry — assembled around a single challenge: redesigning plant tissue culture for global scale.</p></div>
+  <p class="page-hero__lede" data-reveal data-delay="2">NXT Bioscience has brought together one of the most capable plant science, engineering, and operations teams in the industry - assembled around a single challenge: redesigning plant tissue culture for global scale.</p></div>
   <div class="page-hero__media"><figure class="frame parallax" style="aspect-ratio:7/5"><image-slot id="team-hero" shape="rect" placeholder="Team image"></image-slot></figure></div>
 </div></section>
 <section class="section section--tight"><div class="team-grid"><div class="member" data-reveal><div class="member__photo"><image-slot id="m-daniel" shape="rect" placeholder="Daniel Mansfield"></image-slot></div><p class="member__name">Daniel Mansfield</p><p class="member__role">Chief Executive Officer</p></div><div class="member" data-reveal data-delay="1"><div class="member__photo"><image-slot id="m-carl" shape="rect" placeholder="Carl van Loon"></image-slot></div><p class="member__name">Carl van Loon</p><p class="member__role">Chief Technology Officer</p></div><div class="member" data-reveal data-delay="2"><div class="member__photo"><image-slot id="m-danny" shape="rect" placeholder="Danny Berkovic"></image-slot></div><p class="member__name">Danny Berkovic</p><p class="member__role">Chair</p></div><div class="member" data-reveal data-delay="3"><div class="member__photo"><image-slot id="m-kylie" shape="rect" placeholder="Kylie Balmain"></image-slot></div><p class="member__name">Kylie Balmain</p><p class="member__role">Transition Consultant</p></div><div class="member" data-reveal><div class="member__photo"><image-slot id="m-tim" shape="rect" placeholder="Tim Henderson"></image-slot></div><p class="member__name">Tim Henderson</p><p class="member__role">Technology, Facilities &amp; R&amp;D Project Manager</p></div><div class="member" data-reveal data-delay="1"><div class="member__photo"><image-slot id="m-tiarne" shape="rect" placeholder="Tiarne Mitchell"></image-slot></div><p class="member__name">Tiarne Mitchell</p><p class="member__role">Software and Data Coordinator</p></div><div class="member" data-reveal data-delay="2"><div class="member__photo"><image-slot id="m-patricia" shape="rect" placeholder="Patricia Halls"></image-slot></div><p class="member__name">Patricia Halls</p><p class="member__role">Accounts, People and Lab Coordinator</p></div><div class="member" data-reveal data-delay="3"><div class="member__photo"><image-slot id="m-ramezan" shape="rect" placeholder="Ramezan Rezazadeh"></image-slot></div><p class="member__name">Ramezan Rezazadeh</p><p class="member__role">Principal R&amp;D &amp; Tissue Culture Specialist</p></div><div class="member" data-reveal><div class="member__photo"><image-slot id="m-yuxin" shape="rect" placeholder="Yuxin Xue"></image-slot></div><p class="member__name">Yuxin Xue</p><p class="member__role">R&amp;D &amp; Tissue Culture Specialist</p></div><div class="member" data-reveal data-delay="1"><div class="member__photo"><image-slot id="m-jade" shape="rect" placeholder="Jade Hartley"></image-slot></div><p class="member__name">Jade Hartley</p><p class="member__role">Microbiologist</p></div><div class="member" data-reveal data-delay="2"><div class="member__photo"><image-slot id="m-natasha" shape="rect" placeholder="Natasha Marocik"></image-slot></div><p class="member__name">Natasha Marocik</p><p class="member__role">Production &amp; Administration Coordinator</p></div></div></section>
@@ -525,7 +525,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 <script src="image-slot.js"></script>
 <script>
 /* ============================================================
-   NXT Bioscience — interactions (calm)
+   NXT Bioscience - interactions (calm)
    ============================================================ */
 (function () {
   'use strict';
@@ -545,7 +545,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
         if (el.getBoundingClientRect().top < window.innerHeight * 0.96) el.classList.add('in');
       });
     }, 700);
-    // hard failsafe — force final state inline (survives throttled/paused transitions)
+    // hard failsafe - force final state inline (survives throttled/paused transitions)
     setTimeout(function () {
       reveals.forEach(function (el) {
         el.classList.add('in');
