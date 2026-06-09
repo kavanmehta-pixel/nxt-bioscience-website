@@ -498,11 +498,13 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
     <div class="contact__block"><p class="lbl">Business</p><p>ABN. 82 670 960 853.</p></div>
     <div class="contact__block"><p class="lbl">Follow us on</p><a href="https://www.linkedin.com/company/nxt-bioscience/" target="_blank" rel="noopener">LinkedIn &rarr;</a></div>
   </div>
-  <form class="form" data-feedback="Thanks for submitting!" data-reveal data-delay="1" onsubmit="return false;">
-    <div class="field"><label>Name</label><input type="text" required /></div>
-    <div class="field"><label>Email</label><input type="email" required /></div>
-    <div class="field full"><label>Subject</label><input type="text" /></div>
-    <div class="field full"><label>Message</label><textarea></textarea></div>
+  <form class="form" id="contact-form" data-reveal data-delay="1">
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_subject" value="New enquiry from NXT Bioscience website">
+    <div class="field"><label>Name</label><input type="text" name="name" required /></div>
+    <div class="field"><label>Email</label><input type="email" name="email" required /></div>
+    <div class="field full"><label>Subject</label><input type="text" name="subject" /></div>
+    <div class="field full"><label>Message</label><textarea name="message"></textarea></div>
     <div class="full"><button type="submit" class="btn btn--primary">Submit</button><p class="form__note" data-note></p></div>
   </form>
 </div></section>
@@ -700,7 +702,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
   }
 
-  /* ---------- form feedback (newsletter + contact) ---------- */
+  /* ---------- form feedback (newsletter) ---------- */
   document.querySelectorAll('form[data-feedback]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -710,6 +712,40 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
       if (input && form.classList.contains('news')) input.value = '';
     });
   });
+
+  /* ---------- contact form (FormSubmit AJAX) ---------- */
+  var cf = document.getElementById('contact-form');
+  if (cf) {
+    cf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = cf.querySelector('button[type="submit"]');
+      var note = cf.querySelector('[data-note]');
+      var orig = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      fetch('https://formsubmit.co/ajax/daniel@nxtbioscience.com.au', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(cf)))
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.success) {
+          if (note) { note.textContent = 'Thanks! We\'ll be in touch shortly.'; note.style.color = 'var(--uv)'; }
+          cf.reset();
+        } else {
+          if (note) { note.textContent = 'Something went wrong - please email us directly.'; note.style.color = '#e55'; }
+        }
+        btn.textContent = orig;
+        btn.disabled = false;
+      })
+      .catch(function () {
+        if (note) { note.textContent = 'Something went wrong - please email us directly.'; note.style.color = '#e55'; }
+        btn.textContent = orig;
+        btn.disabled = false;
+      });
+    });
+  }
 })();
 
 </script>
