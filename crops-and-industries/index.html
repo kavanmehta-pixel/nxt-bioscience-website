@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Our Story | NXT Bioscience</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<title>Crops &amp; Industries | NXT Bioscience</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
 /* ============================================================
    NXT Bioscience - site styles (warm editorial)
@@ -141,7 +141,7 @@ img{ max-width:100%; display:block; }
 .page-hero--solo h1{ max-width:18ch; }
 .page-lead{ max-width:var(--maxw); margin:0 auto; padding:clamp(22px,3vw,38px) var(--pad) 0;
   display:flex; align-items:baseline; gap:clamp(20px,4vw,56px); flex-wrap:wrap; }
-.page-lead__label{ flex:none; font-size:18px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--stone-2); padding-top:7px; }
+.page-lead__label{ flex:none; font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--stone-2); padding-top:7px; }
 .page-lead__text{ flex:1; min-width:280px; font-family:var(--sans); font-weight:400; font-size:clamp(17px,1.6vw,21px); line-height:1.55;
   letter-spacing:0; color:var(--stone); max-width:74ch; }
 @media (max-width:880px){ .page-lead{ gap:12px; } .page-lead__text{ max-width:none; } }
@@ -158,8 +158,8 @@ img{ max-width:100%; display:block; }
 .prose p strong{ color:var(--ink); font-weight:600; }
 .prose .lead{ font-family:var(--serif); font-weight:400; font-size:clamp(22px,2.6vw,30px); line-height:1.32; color:var(--ink); letter-spacing:-.015em; }
 .prose--full{ max-width:none; }
-.prose--full .lead{ max-width:24ch; }
-.prose--full p:not(.lead){ max-width:80ch; }
+.prose--full .lead{ max-width:none; }
+.prose--full p:not(.lead){ max-width:none; }
 
 /* two-column content */
 .cols2{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(40px,6vw,84px); align-items:start; }
@@ -478,61 +478,169 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 </style></head><body>
 <div class="scroll-progress" id="scrollProgress"></div>
 <header class="nav" id="nav"><div class="nav__inner">
-    <a class="nav__logo" href="index.html" aria-label="NXT Bioscience home"><img src="assets/nxt-logo-light.png" alt="NXT Bioscience" /></a>
-    <nav class="nav__links" aria-label="Primary"><a href="our-platform.html">Our Platform</a><a href="crops-and-industries.html">Crops &amp; Industries</a><a href="our-story.html" class="is-current">Our Story</a><a href="our-team.html">Our Team</a><a href="contact.html">Contact</a></nav>
-    <div class="nav__right"><a class="btn btn--primary btn--sm" href="contact.html">Let&rsquo;s talk</a>
+    <a class="nav__logo" href="/" aria-label="NXT Bioscience home"><img src="/assets/nxt-logo-light.png" alt="NXT Bioscience" /></a>
+    <nav class="nav__links" aria-label="Primary"><a href="/our-platform">Our Platform</a><a href="/crops-and-industries" class="is-current">Crops &amp; Industries</a><a href="/our-story">Our Story</a><a href="/our-team">Our Team</a><a href="/contact">Contact</a></nav>
+    <div class="nav__right"><a class="btn btn--primary btn--sm" href="/contact">Let&rsquo;s talk</a>
     <button class="nav__burger" id="burger" aria-label="Toggle menu"><span></span><span></span></button></div>
   </div></header>
-<section class="page-hero page-hero--solo"><div class="page-hero__top">
-  <div><h1 data-reveal data-delay="1">Redesigning plant tissue culture for <em>global scale</em></h1></div>
+<section class="page-hero page-hero--split"><div class="page-hero__top">
+  <div class="page-hero__text">
+  <h1 data-reveal data-delay="1">The platform for clonal crops at <em>global scale</em></h1>
+  <p class="page-hero__lede" data-reveal data-delay="2">NXT&rsquo;s platform was built for clonal propagation at global scale - applied selectively across crops where eliminating labour unlocks the strongest commercial outcome.</p></div>
+  <div class="page-hero__media"><figure class="frame parallax" style="aspect-ratio:3/2"><image-slot id="crop-hero" shape="rect" placeholder="Hero image"></image-slot></figure></div>
 </div></section>
-<div class="divider"><hr /></div>
-<section class="page-lead">
-  <p class="page-lead__label" data-reveal>Our Story</p>
-  <p class="page-lead__text" data-reveal data-delay="1">NXT Bioscience exists to scale plant tissue culture beyond the limits of manual labour - combining innovative plant science with robotics and automation to meet global demand for clonal propagation, new genetics, and resilient supply chains.</p>
+
+<section class="section section--tight" style="padding-bottom:clamp(18px,2.5vw,30px)"><div class="prose prose--lead prose--full" data-reveal>
+  <p class="lead">NXT&rsquo;s platform was built from first principles for clonal propagation at global scale.</p>
+  <p>Today, the platform is in active production or development across the crops where automated tissue culture offers the strongest commercial outcome - from staple food crops to specialist horticulture, from broadacre agriculture and bioenergy to ornamental nurseries.</p>
+</div></section>
+
+<section class="section section--tight">
+  <div class="xhead" data-reveal>
+    <h2 class="xhead__title">In production &amp; in <em>development</em></h2>
+    <p class="xhead__meta"><b>11</b> categories<span style="color:var(--green-2)">/</span><b>40+</b> crops</p>
+  </div>
+  <div class="croptiles">
+    <article class="ctile" data-name="Banana" data-status="dev" data-desc="A global staple where clean, resilient genetics underpin long-term supply security." data-crops="Banana|Plantain" aria-label="Banana - view details">
+    <image-slot id="crop-banana" class="ctile__slot" shape="rect" placeholder="Banana"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--dev">In development</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Banana</h3>
+      <p class="ctile__count">2 crops</p>
+    </div>
+  </article><article class="ctile" data-name="Berries" data-status="dev" data-desc="Scaling clean genetics into one of agriculture&rsquo;s fastest-moving commercial categories." data-crops="Blackberry|Blueberry|Raspberry|Strawberry" aria-label="Berries - view details">
+    <image-slot id="crop-berries" class="ctile__slot" shape="rect" placeholder="Berries"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--dev">In development</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Berries</h3>
+      <p class="ctile__count">4 crops</p>
+    </div>
+  </article><article class="ctile" data-name="Sugarcane" data-status="live" data-desc="A foundational global crop where clonal scale accelerates new genetic deployment." data-crops="Sugarcane|Energycane" aria-label="Sugarcane - view details">
+    <image-slot id="crop-sugarcane" class="ctile__slot" shape="rect" placeholder="Sugarcane"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--live">In production</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Sugarcane</h3>
+      <p class="ctile__count">2 crops</p>
+    </div>
+  </article><article class="ctile" data-name="Potato" data-status="live" data-desc="Reshoring clean seed potato supply through automated, biosecure propagation." data-crops="Potato|Sweet potato" aria-label="Potato - view details">
+    <image-slot id="crop-potato" class="ctile__slot" shape="rect" placeholder="Potato"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--live">In production</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Potato</h3>
+      <p class="ctile__count">2 crops</p>
+    </div>
+  </article><article class="ctile" data-name="Tomato" data-status="dev" data-desc="Consistent, clean starting material for the world&rsquo;s largest protected-cropping category." data-crops="Tomato" aria-label="Tomato - view details">
+    <image-slot id="crop-tomato" class="ctile__slot" shape="rect" placeholder="Tomato"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--dev">In development</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Tomato</h3>
+      <p class="ctile__count">1 crop</p>
+    </div>
+  </article><article class="ctile" data-name="Food &amp; Specialty Crops" data-status="dev" data-desc="Bringing automated tissue culture to crops where clean genetics shape global supply." data-crops="Cassava|Grapes|Hops|Herbs|Ginger|Pineapple" aria-label="Food & Specialty Crops - view details">
+    <image-slot id="crop-food" class="ctile__slot" shape="rect" placeholder="Food & Specialty Crops"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--dev">In development</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Food &amp; Specialty Crops</h3>
+      <p class="ctile__count">6 crops</p>
+    </div>
+  </article><article class="ctile" data-name="Tree Crops" data-status="dev" data-desc="Faster genetic deployment for the orchards that anchor global food supply." data-crops="Apple|Almond|Pistachio|Walnut|Citrus" aria-label="Tree Crops - view details">
+    <image-slot id="crop-tree" class="ctile__slot" shape="rect" placeholder="Tree Crops"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--dev">In development</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Tree Crops</h3>
+      <p class="ctile__count">5 crops</p>
+    </div>
+  </article><article class="ctile" data-name="Forestry" data-status="dev" data-desc="Cleaner, faster, more resilient genetics for the plantations of the next century." data-crops="Eucalyptus|Pinus" aria-label="Forestry - view details">
+    <image-slot id="crop-forestry" class="ctile__slot" shape="rect" placeholder="Forestry"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--dev">In development</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Forestry</h3>
+      <p class="ctile__count">2 crops</p>
+    </div>
+  </article><article class="ctile" data-name="Bioenergy &amp; Industrial Crops" data-status="live" data-desc="Unlocking the propagation economics that bioenergy and bio-industry have always needed." data-crops="Miscanthus giganteus|Napier Grass|Arundo donax|Pongamia pinnata|Mallee Eucalyptus|Agave tequiliana|Oil Palm" aria-label="Bioenergy & Industrial Crops - view details">
+    <image-slot id="crop-bioenergy" class="ctile__slot" shape="rect" placeholder="Bioenergy & Industrial Crops"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--live">In production</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Bioenergy &amp; Industrial Crops</h3>
+      <p class="ctile__count">7 crops</p>
+    </div>
+  </article><article class="ctile" data-name="Ornamentals &amp; Landscape" data-status="live" data-desc="Two decades of tissue culture depth across landscape grasses, natives, and ornamentals." data-crops="Lomandra|Dianella|Kangaroo Paw|Heuchera|Nandina|Indoor &amp; foliage plants" aria-label="Ornamentals & Landscape - view details">
+    <image-slot id="crop-ornamentals" class="ctile__slot" shape="rect" placeholder="Ornamentals & Landscape"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--live">In production</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Ornamentals &amp; Landscape</h3>
+      <p class="ctile__count">6 crops</p>
+    </div>
+  </article><article class="ctile" data-name="Unrooted Cutting Crops" data-status="live" data-desc="Replacing the offshore cutting model with cleaner, more biosecure local supply." data-crops="Petunia|Calibrachoa|Chrysanthemum|Pelargonium" aria-label="Unrooted Cutting Crops - view details">
+    <image-slot id="crop-cuttings" class="ctile__slot" shape="rect" placeholder="Unrooted Cutting Crops"></image-slot>
+    <div class="ctile__grad"></div>
+    <span class="ctile__view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></span>
+    <span class="ctile__status ctile__status--live">In production</span>
+    <div class="ctile__body">
+      <h3 class="ctile__name">Unrooted Cutting Crops</h3>
+      <p class="ctile__count">4 crops</p>
+    </div>
+  </article>
+  </div>
+  <p class="tilehint" data-reveal>Click any crop to see the full picture &amp; what we&rsquo;re propagating.</p>
 </section>
 
-<section class="feature">
-  <div class="feature__body">
-    <h2 class="h2" data-reveal>A foundation worth building on</h2>
-    <div class="feature__text"><p data-reveal>Plant tissue culture is the foundation of modern plant science. It has supported clean genetic deployment, varietal development, and clonal propagation at significant commercial scale for decades.</p><p data-reveal>But the underlying model has remained largely unchanged since the 1960s. Even at the scale it operates today, tissue culture depends on skilled people performing repetitive manual work across millions of plants - and that model has reached the limit of what it can do.</p><p data-reveal>The science is sound. The skill of the people running it is significant. The constraint is the system around them.</p></div>
+<section class="newcrops">
+  <div class="newcrops__inner">
+    <div class="newcrops__l" data-reveal><h2>Always developing<br /><em>new crops</em></h2></div>
+    <div class="newcrops__r prose" data-reveal data-delay="1">
+      <p>NXT&rsquo;s platform continues to expand into new crop categories as the science matures and commercial demand grows. New crops move through proof-of-concept and protocol development as the platform deploys globally.</p>
+      <p>If your crop or industry is not listed, reach out - there is a strong chance we are already working on it, or evaluating it as the next fit.</p>
+      <a class="btn btn--primary" href="/contact">Talk to us about your crop &rarr;</a>
+    </div>
   </div>
-  <div class="feature__media"><figure class="frame parallax" style="aspect-ratio:4/5;max-width:420px;margin-left:auto"><image-slot id="story-1" shape="rect" placeholder="Image"></image-slot></figure></div>
 </section>
-<section class="feature feature--reverse">
-  <div class="feature__body">
-    <h2 class="h2" data-reveal>What changes when labour stops being the constraint</h2>
-    <div class="feature__text"><p data-reveal>The economics of tissue culture have always been governed by labour. The cost of skilled hands moving plants one at a time has restricted TC to crops where the value per plant justifies the cost.</p><p data-reveal>When labour stops being the constraint, the equation changes.</p><p data-reveal>Crops that were never economically viable come within reach. Production moves closer to where plants are needed, not where labour is cheapest. Biosecurity strengthens. Supply chains shorten. Tissue culture stops being a specialist tool and becomes a credible answer to global propagation demand.</p></div>
+<div class="cropmodal" id="cropModal" role="dialog" aria-modal="true" aria-labelledby="cropModalName">
+  <div class="cropmodal__backdrop" data-close></div>
+  <div class="cropmodal__panel">
+    <button class="cropmodal__close" data-close aria-label="Close">&times;</button>
+    <div class="cropmodal__media"><img alt="" data-m-img /><div class="cropmodal__media-empty" data-m-empty>No image yet</div></div>
+    <div class="cropmodal__info">
+      <span class="cropmodal__status" data-m-status></span>
+      <h3 class="cropmodal__name" id="cropModalName" data-m-name></h3>
+      <p class="cropmodal__desc" data-m-desc></p>
+      <div><p class="cropmodal__sub">Crops</p><div class="cropmodal__list" data-m-list></div></div>
+    </div>
   </div>
-  <div class="feature__media"><figure class="frame parallax" style="aspect-ratio:3/2"><image-slot id="story-2" shape="rect" placeholder="Image"></image-slot></figure></div>
-</section>
-<section class="feature">
-  <div class="feature__body">
-    <h2 class="h2" data-reveal>Where NXT fits</h2>
-    <div class="feature__text"><p data-reveal>NXT Bioscience is redesigning plant tissue culture for global scale. By combining innovative plant science with robotics and automation, the platform removes labour as the cost barrier and brings tissue culture into the propagation pipelines global agriculture, horticulture, and industry depend on.</p><p data-reveal>The work is grounded in serious science. Plant biology, media, and morphology have been redeveloped from first principles to work with automation rather than against it. The platform is protected by a global patent portfolio covering the integrated system, not a single invention.</p><p data-reveal>NXT is Australian-developed technology, headquartered in Melbourne and built for a global market. We operate a world-class plant tissue culture R&amp;D facility with a world-leading team.</p></div>
-  </div>
-  <div class="feature__media"><figure class="frame parallax" style="aspect-ratio:7/5"><image-slot id="story-3" shape="rect" placeholder="Image"></image-slot></figure></div>
-</section>
-<section class="feature feature--reverse">
-  <div class="feature__body">
-    <h2 class="h2" data-reveal>What comes next</h2>
-    <div class="feature__text"><p data-reveal>NXT&rsquo;s platform is in active development across more than 30 crops, with new categories moving through proof-of-concept as it deploys globally.</p><p data-reveal>For breeders, propagators, industry partners, and investors looking to remove labour as the cost barrier in high-health propagation supply chains, the conversation is open.</p></div>
-  </div>
-  <div class="feature__media"><figure class="frame parallax" style="aspect-ratio:16/9"><image-slot id="story-4" shape="rect" placeholder="Image"></image-slot></figure></div>
-</section>
+</div>
 <footer class="footer" id="footer"><div class="footer__top">
   <div class="footer__brand">
-    <a class="footer__logo" href="index.html"><img src="assets/nxt-logo-light.png" alt="NXT Bioscience" /></a>
+    <a class="footer__logo" href="/"><img src="/assets/nxt-logo-light.png" alt="NXT Bioscience" /></a>
     <p class="footer__addr">4/167 Flinders Lane<br />Melbourne VIC 3000, Australia<br /><a href="mailto:info@nxtbioscience.com.au">info@nxtbioscience.com.au</a></p>
     <p class="footer__abn">ABN 82 670 960 853</p>
   </div>
   <nav class="footer__col" aria-label="Explore">
     <p class="footer__h">Explore</p>
-    <a href="our-platform.html">Our Platform</a>
-    <a href="crops-and-industries.html">Crops &amp; Industries</a>
-    <a href="our-story.html">Our Story</a>
-    <a href="our-team.html">Our Team</a>
-    <a href="contact.html">Contact</a>
+    <a href="/our-platform">Our Platform</a>
+    <a href="/crops-and-industries">Crops &amp; Industries</a>
+    <a href="/our-story">Our Story</a>
+    <a href="/our-team">Our Team</a>
+    <a href="/contact">Contact</a>
   </nav>
   <div class="footer__news">
     <p class="footer__h">Keep up to date</p>
@@ -546,7 +654,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 </div>
 <div class="footer__bottom"><span>&copy; 2026 NXT Bioscience</span><span class="footer__sig">Redesigning tissue culture for global scale</span></div>
 </footer>
-<script src="image-slot.js"></script>
+<script src="/image-slot.js"></script>
 <script>
 /* ============================================================
    NXT Bioscience - interactions (calm)
@@ -727,5 +835,34 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 })();
 
 </script>
-
+<div id="tweaks-root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+const TWEAK_DEFAULTS = {"accent":"#00ff00","columns":3,"aspect":"wide","badges":true};
+function CropsTweaks(){
+  const [t,setTweak]=useTweaks(TWEAK_DEFAULTS);
+  React.useEffect(()=>{
+    const r=document.documentElement;
+    r.style.setProperty('--neon',t.accent); r.style.setProperty('--green-2',t.accent);
+    r.style.setProperty('--tile-cols',String(t.columns));
+    r.style.setProperty('--tile-ar', t.aspect==='square'?'1 / 1':(t.aspect==='tall'?'5 / 6':'3 / 2'));
+    const g=document.querySelector('.croptiles');
+    if(g){ g.setAttribute('data-badges',t.badges?'on':'off'); }
+  },[t]);
+  return (
+    <TweaksPanel>
+      <TweakSection label="Accent" />
+      <TweakColor label="Accent colour" value={t.accent} options={['#00ff00','#1628f2','#f4f6f8']} onChange={(v)=>setTweak('accent',v)} />
+      <TweakSection label="Crop grid" />
+      <TweakRadio label="Columns" value={t.columns} options={[2,3,4]} onChange={(v)=>setTweak('columns',v)} />
+      <TweakRadio label="Tile shape" value={t.aspect} options={['wide','square','tall']} onChange={(v)=>setTweak('aspect',v)} />
+      <TweakToggle label="Status badges" value={t.badges} onChange={(v)=>setTweak('badges',v)} />
+    </TweaksPanel>
+  );
+}
+ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<CropsTweaks/>);
+</script>
 </body></html>

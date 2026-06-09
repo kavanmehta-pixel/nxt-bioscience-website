@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact | NXT Bioscience</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<title>Our Story | NXT Bioscience</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
 /* ============================================================
    NXT Bioscience - site styles (warm editorial)
@@ -141,7 +141,7 @@ img{ max-width:100%; display:block; }
 .page-hero--solo h1{ max-width:18ch; }
 .page-lead{ max-width:var(--maxw); margin:0 auto; padding:clamp(22px,3vw,38px) var(--pad) 0;
   display:flex; align-items:baseline; gap:clamp(20px,4vw,56px); flex-wrap:wrap; }
-.page-lead__label{ flex:none; font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--stone-2); padding-top:7px; }
+.page-lead__label{ flex:none; font-size:18px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--stone-2); padding-top:7px; }
 .page-lead__text{ flex:1; min-width:280px; font-family:var(--sans); font-weight:400; font-size:clamp(17px,1.6vw,21px); line-height:1.55;
   letter-spacing:0; color:var(--stone); max-width:74ch; }
 @media (max-width:880px){ .page-lead{ gap:12px; } .page-lead__text{ max-width:none; } }
@@ -478,47 +478,61 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 </style></head><body>
 <div class="scroll-progress" id="scrollProgress"></div>
 <header class="nav" id="nav"><div class="nav__inner">
-    <a class="nav__logo" href="index.html" aria-label="NXT Bioscience home"><img src="assets/nxt-logo-light.png" alt="NXT Bioscience" /></a>
-    <nav class="nav__links" aria-label="Primary"><a href="our-platform.html">Our Platform</a><a href="crops-and-industries.html">Crops &amp; Industries</a><a href="our-story.html">Our Story</a><a href="our-team.html">Our Team</a><a href="contact.html" class="is-current">Contact</a></nav>
-    <div class="nav__right"><a class="btn btn--primary btn--sm" href="contact.html">Let&rsquo;s talk</a>
+    <a class="nav__logo" href="/" aria-label="NXT Bioscience home"><img src="/assets/nxt-logo-light.png" alt="NXT Bioscience" /></a>
+    <nav class="nav__links" aria-label="Primary"><a href="/our-platform">Our Platform</a><a href="/crops-and-industries">Crops &amp; Industries</a><a href="/our-story" class="is-current">Our Story</a><a href="/our-team">Our Team</a><a href="/contact">Contact</a></nav>
+    <div class="nav__right"><a class="btn btn--primary btn--sm" href="/contact">Let&rsquo;s talk</a>
     <button class="nav__burger" id="burger" aria-label="Toggle menu"><span></span><span></span></button></div>
   </div></header>
-<section class="page-hero page-hero--split"><div class="page-hero__top">
-  <div class="page-hero__text">
-  <h1 data-reveal data-delay="1">Get in <em>touch</em></h1>
-  <p class="page-hero__lede" data-reveal data-delay="2">NXT Bioscience works with breeders, propagators, industry partners, and investors interested in scaling plant tissue culture for global propagation. Tell us about your work and we will respond directly.</p></div>
-  <div class="page-hero__media"><figure class="frame parallax" style="aspect-ratio:3/2"><image-slot id="contact-hero" shape="rect" placeholder="Hero image"></image-slot></figure></div>
+<section class="page-hero page-hero--solo"><div class="page-hero__top">
+  <div><h1 data-reveal data-delay="1">Redesigning plant tissue culture for <em>global scale</em></h1></div>
 </div></section>
 <div class="divider"><hr /></div>
+<section class="page-lead">
+  <p class="page-lead__label" data-reveal>Our Story</p>
+  <p class="page-lead__text" data-reveal data-delay="1">NXT Bioscience exists to scale plant tissue culture beyond the limits of manual labour - combining innovative plant science with robotics and automation to meet global demand for clonal propagation, new genetics, and resilient supply chains.</p>
+</section>
 
-<section class="section"><div class="contact">
-  <div class="contact__details" data-reveal>
-    <div class="contact__block"><p class="lbl">NXT Bioscience</p><p>4/167 Flinders Lane<br />Melbourne VIC 3000</p></div>
-    <div class="contact__block"><p class="lbl">Email</p><a href="mailto:info@nxtbioscience.com.au">info@nxtbioscience.com.au</a></div>
-    <div class="contact__block"><p class="lbl">Business</p><p>ABN. 82 670 960 853.</p></div>
-    <div class="contact__block"><p class="lbl">Follow us on</p><a href="https://www.linkedin.com/company/nxt-bioscience/" target="_blank" rel="noopener">LinkedIn &rarr;</a></div>
+<section class="feature">
+  <div class="feature__body">
+    <h2 class="h2" data-reveal>A foundation worth building on</h2>
+    <div class="feature__text"><p data-reveal>Plant tissue culture is the foundation of modern plant science. It has supported clean genetic deployment, varietal development, and clonal propagation at significant commercial scale for decades.</p><p data-reveal>But the underlying model has remained largely unchanged since the 1960s. Even at the scale it operates today, tissue culture depends on skilled people performing repetitive manual work across millions of plants - and that model has reached the limit of what it can do.</p><p data-reveal>The science is sound. The skill of the people running it is significant. The constraint is the system around them.</p></div>
   </div>
-  <form class="form" data-feedback="Thanks for submitting!" data-reveal data-delay="1" onsubmit="return false;">
-    <div class="field"><label>Name</label><input type="text" required /></div>
-    <div class="field"><label>Email</label><input type="email" required /></div>
-    <div class="field full"><label>Subject</label><input type="text" /></div>
-    <div class="field full"><label>Message</label><textarea></textarea></div>
-    <div class="full"><button type="submit" class="btn btn--primary">Submit</button><p class="form__note" data-note></p></div>
-  </form>
-</div></section>
+  <div class="feature__media"><figure class="frame parallax" style="aspect-ratio:4/5;max-width:420px;margin-left:auto"><image-slot id="story-1" shape="rect" placeholder="Image"></image-slot></figure></div>
+</section>
+<section class="feature feature--reverse">
+  <div class="feature__body">
+    <h2 class="h2" data-reveal>What changes when labour stops being the constraint</h2>
+    <div class="feature__text"><p data-reveal>The economics of tissue culture have always been governed by labour. The cost of skilled hands moving plants one at a time has restricted TC to crops where the value per plant justifies the cost.</p><p data-reveal>When labour stops being the constraint, the equation changes.</p><p data-reveal>Crops that were never economically viable come within reach. Production moves closer to where plants are needed, not where labour is cheapest. Biosecurity strengthens. Supply chains shorten. Tissue culture stops being a specialist tool and becomes a credible answer to global propagation demand.</p></div>
+  </div>
+  <div class="feature__media"><figure class="frame parallax" style="aspect-ratio:3/2"><image-slot id="story-2" shape="rect" placeholder="Image"></image-slot></figure></div>
+</section>
+<section class="feature">
+  <div class="feature__body">
+    <h2 class="h2" data-reveal>Where NXT fits</h2>
+    <div class="feature__text"><p data-reveal>NXT Bioscience is redesigning plant tissue culture for global scale. By combining innovative plant science with robotics and automation, the platform removes labour as the cost barrier and brings tissue culture into the propagation pipelines global agriculture, horticulture, and industry depend on.</p><p data-reveal>The work is grounded in serious science. Plant biology, media, and morphology have been redeveloped from first principles to work with automation rather than against it. The platform is protected by a global patent portfolio covering the integrated system, not a single invention.</p><p data-reveal>NXT is Australian-developed technology, headquartered in Melbourne and built for a global market. We operate a world-class plant tissue culture R&amp;D facility with a world-leading team.</p></div>
+  </div>
+  <div class="feature__media"><figure class="frame parallax" style="aspect-ratio:7/5"><image-slot id="story-3" shape="rect" placeholder="Image"></image-slot></figure></div>
+</section>
+<section class="feature feature--reverse">
+  <div class="feature__body">
+    <h2 class="h2" data-reveal>What comes next</h2>
+    <div class="feature__text"><p data-reveal>NXT&rsquo;s platform is in active development across more than 30 crops, with new categories moving through proof-of-concept as it deploys globally.</p><p data-reveal>For breeders, propagators, industry partners, and investors looking to remove labour as the cost barrier in high-health propagation supply chains, the conversation is open.</p></div>
+  </div>
+  <div class="feature__media"><figure class="frame parallax" style="aspect-ratio:16/9"><image-slot id="story-4" shape="rect" placeholder="Image"></image-slot></figure></div>
+</section>
 <footer class="footer" id="footer"><div class="footer__top">
   <div class="footer__brand">
-    <a class="footer__logo" href="index.html"><img src="assets/nxt-logo-light.png" alt="NXT Bioscience" /></a>
+    <a class="footer__logo" href="/"><img src="/assets/nxt-logo-light.png" alt="NXT Bioscience" /></a>
     <p class="footer__addr">4/167 Flinders Lane<br />Melbourne VIC 3000, Australia<br /><a href="mailto:info@nxtbioscience.com.au">info@nxtbioscience.com.au</a></p>
     <p class="footer__abn">ABN 82 670 960 853</p>
   </div>
   <nav class="footer__col" aria-label="Explore">
     <p class="footer__h">Explore</p>
-    <a href="our-platform.html">Our Platform</a>
-    <a href="crops-and-industries.html">Crops &amp; Industries</a>
-    <a href="our-story.html">Our Story</a>
-    <a href="our-team.html">Our Team</a>
-    <a href="contact.html">Contact</a>
+    <a href="/our-platform">Our Platform</a>
+    <a href="/crops-and-industries">Crops &amp; Industries</a>
+    <a href="/our-story">Our Story</a>
+    <a href="/our-team">Our Team</a>
+    <a href="/contact">Contact</a>
   </nav>
   <div class="footer__news">
     <p class="footer__h">Keep up to date</p>
@@ -532,7 +546,7 @@ image-slot::part(ring){ border-color:rgba(255,255,255,.16); }
 </div>
 <div class="footer__bottom"><span>&copy; 2026 NXT Bioscience</span><span class="footer__sig">Redesigning tissue culture for global scale</span></div>
 </footer>
-<script src="image-slot.js"></script>
+<script src="/image-slot.js"></script>
 <script>
 /* ============================================================
    NXT Bioscience - interactions (calm)
